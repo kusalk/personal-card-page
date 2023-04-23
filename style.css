@@ -10,6 +10,7 @@
 body {
     background: linear-gradient(to top right, #4BC0C8, #C779D0, #FEAC5E);
     font-family: 'Roboto Condensed', sans-serif;
+    color: #333333;
 
     display: flex;
     align-items: center;
@@ -31,8 +32,6 @@ body {
     --h-padding: 8%;
     --section-gap: 40px;
     padding: var(--v-padding) var(--h-padding);
-    color: #333333;
-    background: white;
     border-radius: 20px;
     box-shadow: 0 1.5rem 2.5rem 0.5rem #00000020;
     background: linear-gradient(30deg, #FFFFFF50 10%, white 50%);
@@ -153,10 +152,6 @@ h1 {
     height: 60%;
 }
 
-#social-links svg path {
-    fill: black;
-}
-
 /* CARD BACK */
 
 #projects {
@@ -189,5 +184,25 @@ p {
 /* DARK MODE */
 
 @media (prefers-color-scheme: dark) {
-    /* TODO Dark mode */
+    body {
+        background: linear-gradient(to right top, rgb(45, 141, 147), rgb(110, 41, 118), rgb(147, 72, 1));
+        color: rgb(200, 195, 188);
+    }
+
+    #card {
+        background: linear-gradient(30deg, #18181890 10%, #181818 50%);
+        box-shadow: 0 1.5rem 2.5rem 0.5rem #00000040;
+    }
+
+    #social-links a {
+        background: #FFFFFF20;
+    }
+
+    svg path {
+        fill: white;
+    }
+
+    #profile::after, .heading::after {
+        border-bottom-color: #FFFFFF50;
+    }
 }
