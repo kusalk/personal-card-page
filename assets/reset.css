@@ -8,10 +8,17 @@
     font: inherit;
 }
 
+html {
+    /* webkit mobile viewport fix */
+    height: -webkit-fill-available;
+}
+
 body {
     min-height: 100vh;
     line-height: 1.5;
     -webkit-font-smoothing: antialiased;
+    /* webkit mobile viewport fix */
+    min-height: -webkit-fill-available;
 }
 
 img, picture, video, canvas, svg {

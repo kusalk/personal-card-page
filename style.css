@@ -20,6 +20,7 @@ body {
     width: 500px;
     max-width: 90%;
     max-height: 90%;
+    margin: 20px 0;
 
     /* Flip animation */
     perspective: 1000px;
