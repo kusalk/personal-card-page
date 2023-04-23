@@ -27,7 +27,6 @@ body {
 }
 
 #card {
-    /* TODO Fade in on load */
     position: relative;
     --v-padding: 30px;
     --h-padding: 8%;
