@@ -2,9 +2,7 @@ let rotateDeg = 0;
 const card = document.getElementById("card");
 const front = document.getElementById("front");
 const back = document.getElementById("back");
-const frontFlip = document.querySelector('#front .flip');
-const backFlip = document.querySelector('#back .flip');
-const flipIcons = [frontFlip, backFlip];
+const flipIcons = [front, back].map(el => el.querySelector(".flip"));
 flipIcons.forEach(icon => icon.addEventListener("click", e => clickFlip(e.target)));
 back.setAttribute("inert", "");
 
